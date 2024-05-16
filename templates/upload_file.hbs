@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Upload Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background:linear-gradient(to left,lightgreen,lightblue);
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            color: #3f3f3f;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            height: 50%;
+            background-color: white;
+            border-radius: 0.25rem;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+        label {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        input[type="file"] {
+            font-size: 1.2rem;
+            padding: 0.5rem 2rem;
+            border-radius: 0.25rem;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 2rem;
+        }
+        button[type="submit"] {
+            font-size: 1.2rem;
+            padding: 0.5rem 2rem;
+            border-radius: 0.25rem;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+        }
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<center>
+<h1>Welcome!!</h1>
+    <h1>UPLOAD YOUR FILES HERE</h1>
+<form action="/upload_file" method="post" enctype="multipart/form-data">
+    <label for="file">Select a file to upload:</label>
+    <input type="file" id="file" name="file" required>
+    <button type="submit">Upload File</button>
+</form>
+</center>
+</body>
+</html>

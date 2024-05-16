@@ -1,0 +1,80 @@
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to top, white, powderblue);
+    }
+
+    table {
+        width: 2000px;
+        border-collapse: collapse;
+        background-color: #fff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    input[type="text"], input[type="submit"] {
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    input[type="submit"]:active {
+        background-color: #3e8e41;
+    }
+</style>
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Department</th>
+        <th>Uploaded?</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each data}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.department}}</td>
+            <td>
+                {{#if (eq this.name "Helo12")}}
+                    Yes
+                {{else}}
+                    No
+                {{/if}}
+            </td>
+        </tr>
+    {{/each}}
+    </tbody>
+</table>

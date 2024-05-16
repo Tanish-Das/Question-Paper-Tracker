@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background:linear-gradient(to left,lightgreen,lightblue);
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            color: #3f3f3f;
+        }
+        button {
+            font-size: 1.2rem;
+            padding: 0.5rem 2rem;
+            border-radius: 0.25rem;
+            border: none;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+            height: 400px;
+            width: 400px;
+            margin: 0 1rem;
+        }
+        .admin-table-button {
+            background-image: url('https://thumbs.dreamstime.com/z/datatable-icon-table-192968910.jpg');
+        }
+        .create-faculty-button {
+            background-image: url('https://www.shareicon.net/data/128x128/2015/11/29/679436_laptop_512x512.png');
+            margin-right: 0;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+<h1>WELCOME!!</h1>
+<div class="button-container">
+    <button type="button" class="admin-table-button" onclick="location.href='/admin_table'"></button>
+    <button type="button" class="create-faculty-button" onclick="location.href='/create_faculty'"></button>
+</div>
+</body>
+</html>

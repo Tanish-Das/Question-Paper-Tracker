@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background:linear-gradient(to left,lightgreen,lightblue);
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            color: #3f3f3f;
+        }
+        button {
+            font-size: 1.2rem;
+            padding: 0.5rem 2rem;
+            border-radius: 0.25rem;
+            border: none;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+            height: 400px;
+            width: 400px;
+            margin: 0 1rem;
+        }
+        .admin-button {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOtA1ZQaMBBXSTHibWAGswiEDXA0tHJ57xRFu8ijbKFw&s');
+        }
+        .faculty-button {
+            background-image: url('https://furtaev.ru/preview/team_working_on_computers.png');
+            margin-right: 0;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+<h1>WELCOME!!</h1>
+<div class="button-container">
+    <button type="button" class="admin-button" onclick="location.href='/admin'"></button>
+    <button type="button" class="faculty-button" onclick="location.href='/faculty'"></button>
+</div>
+</body>
+</html>
